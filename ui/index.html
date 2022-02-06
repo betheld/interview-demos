@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quick Base Craft Demo</title>
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <h2>Sales Region Form</h2>
+  </header>
+
+  <form>
+    <h4>Label</h4>
+    <input id="label" type="text" placeholder="Sales Region">
+    
+    <h4>Type</h4>
+    <span>Multi-Select</span>
+    <input id="required" type="checkbox">
+    <span>A value is required</span>
+
+    <h4>Default Value</h4>
+    <input id="default" type="text">
+
+    <h4>Choices</h4>
+    <textarea id="choiceTextArea"></textarea>
+
+    <h5>Sort List:</h5>
+    <select id="displayAlpha">
+      <option value="true">Alphabetical Order</option>
+      <option value="false">NOT Alphabetical Order</option>
+    </select>
+
+    <button class="button" type="button" onclick="FieldService.saveField()">SAVE</button>
+  </form>
+
+  <br>
+  <section>
+    <p id="errorMessage" style="color:red;"></p>
+    <p id="successMessage" style="color:darkgreen;"></p>
+  </section>
+  <div id="clearButton">
+    <button type="button" onclick="FieldService.clearForm()">CLEAR FORM</button>
+  </div>
+
+</div>
+
+  <script src="mockService.js"></script>
+</body>
+
+</html>

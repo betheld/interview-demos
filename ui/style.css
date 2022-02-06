@@ -1,0 +1,45 @@
+html, body{
+    background-color: darkslategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem auto 1rem;
+    width: 60%;
+}
+.container{
+    background-color: blanchedalmond;
+    border: 2px black;
+    border-radius: 5px;
+    box-shadow: 8px 5px 5px black;
+    min-width: fit-content;
+    padding: 30px;
+}
+button{
+    background-color: darkslategrey;
+    border-radius: 3px;
+    color:blanchedalmond;
+    font-weight: bold;
+    padding: 4px;
+}
+#choiceTextArea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 200px;
+    min-width: 50%;
+
+}
+
+#clearButton{
+    text-align: right;
+}
+
+form{
+    width: 100%;
+}
+
+h2{
+    color: darkslategrey;
+    margin-top: 0px;
+    text-decoration: underline;
+}
+
+input{
+    padding: 3px;
+}
